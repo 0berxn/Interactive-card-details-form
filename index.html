@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <title>Interactive Card</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="contianer">
+            <div class="card card-front">
+                <div class="card-detail">
+                    <p id= "card-number"class="card-number"></p>
+                    <p id="card-name" class="card-name"></p>
+                    <div class="card-exp">
+                        <p id="card-exp-mm">00</p>
+                        <p>/</p>
+                        <p id="card-exp-yy">00</p>
+                    </div>
+                </div>
+           </div>
+                  <div class="card card-back ">
+                <div class="card-detail-b">
+                </div>
+                <div class="card-cvc"> 
+                    <p id="card-cvc" >0 0 0 0 0</p>
+                </div>
+           </div>
+        </div>
+       <div class="input-infomation">
+        <form action="" method="get">
+            <div class="input-form">
+                <label>CARDHOLDER NAME</label>
+                <input type="text" name="card-name" id="input-card-name" placeholder="e.g. Mashu Kyrielight">
+            </div>
+            <div class="input-form">
+                <label>CARD NUMBER</label>
+                <input type="number" name="" id="input-card-number" placeholder="e.g. 1234 5678 9000">
+            </div>
+            <div class="input-form">
+                <label>EXP.DATE (MM/YY)</label>
+                <div>
+                    <input class="input-2" type="number" name="" id="input-card-exp-mm" placeholder="MM">
+                    <input class="input-2" type="number" name="" id="input-card-exp-yy" placeholder="YY">
+                </div>
+            </div>
+            <div class="input-form">
+                <label>CVC</label>
+                <input class="input-2" type="text" name="" id="input-card-cvc" placeholder="e.g. 123">
+            </div>
+            <button id="bnt-1">Confirm</button>
+        </form>
+       </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
